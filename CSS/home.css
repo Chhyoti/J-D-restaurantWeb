@@ -1,0 +1,181 @@
+/* CSS for the body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./hero.jpeg') no-repeat center center/cover; /* Adjust background as needed */
+    font-family: Arial, sans-serif;
+   
+}
+
+/* CSS for the header and navigation bar */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#navbar {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-left: 0;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-left: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #5928d5;
+}
+
+#phone a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#phone a:hover {
+    color: #580cfe;
+   
+}
+
+/* Additional styles for other elements */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px; 
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.menu-link {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #5111f0;
+}
+#mobile_menu{
+    display:none;
+    height:40px;
+    line-height: 40px;
+    background-color: magenta;
+}
+#mobile_menu ul li{
+
+    list-style: none;
+    padding:0 5px 0 5px  ;
+}
+
+ @media (max-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
+    #phone a {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+   .container p {
+        font-size: 1em;
+    }
+
+    .menu-link {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* For Footer section */
+
+#footer {
+    background-color: rgb(8, 5, 5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    
+}
+
+#footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+#footer .social-media a:hover {
+    color: #4CAF50;
+}
+
